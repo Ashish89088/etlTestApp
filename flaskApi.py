@@ -42,7 +42,6 @@ def search_api():
     # jsondata = result=get_amazon_result(query)
     print(type(jsondata))
     # return dict(jsondata)
-
     return render_template('table.html', n=jsondata)
 
 if __name__ == '__main__':
