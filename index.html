@@ -6,45 +6,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+   
     <script>
+
         var url = ''
+        function getFlipData() {
+            let searchquery = document.getElementById("webapp").value;
+            console.log(searchquery)
+            url = "http://127.0.0.1:8082/?q=" + searchquery
+            window.open(url)
+        }
         async function getData() {
             let searchquery = document.getElementById("webapp").value;
             console.log(searchquery)
-
             url = "http://127.0.0.1:8081/?q=" + searchquery
-            console.log(url)
-
-            window.open(url)
+            window.open(url) 
         }
     </script>
 </head>
 
 <body>
     <h1>Amazon Web scrapping</h1>
-    <!-- <br>
-    <label for="url">enter url</label><br>
-    <input type="text" id="url" name="url" placeholder="enter url">
-    <br> -->
-
-<!--     
-    <form name="WEBSCRAPER" action="." method="post">
-        <label>Enter Wanted List</label>
-        <input type="text" name="name">
-        <input type="submit" value="submit">
-    </form>
-
-    <br><br> -->
-
     <label for="webapp">Search Product</label>
     <input type="text" id="webapp" name="webapp" placeholder="search">
-    <button id="btn" onclick="getData()">Search</button>
-    <br>
 
-    <!-- <label for="wantedList">enter wanted list</label><br>
-    <input type="text" id="wantedList" name="wantedList" placeholder="enter wanted list"> -->
-
-
+    <button id="btn" onclick="getData()">Amazon</button>
+    <!-- <br><br> -->
+    <button id="btn" onclick="getFlipData()">FlipKart</button>
 </body>
-
 </html>
