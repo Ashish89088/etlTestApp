@@ -39,11 +39,12 @@ def convert_to_table(final_result):
 def search_api():
     query = request.args.get('q')
     jsondata = get_amazon_result(query)
+    website='AMAZON'
     # jsondata = result=get_amazon_result(query)
     print(type(jsondata))
     # return dict(jsondata)
 
-    return render_template('table.html', n=jsondata)
+    return render_template('table.html', n=jsondata,website=website)
 
 if __name__ == '__main__':
     app.run(port=8081, host='0.0.0.0')

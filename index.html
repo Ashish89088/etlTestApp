@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-   
+    <link rel="stylesheet" href="styles.css">
+
     <script>
 
         var url = ''
@@ -20,18 +21,31 @@
             let searchquery = document.getElementById("webapp").value;
             console.log(searchquery)
             url = "http://127.0.0.1:8081/?q=" + searchquery
-            window.open(url) 
+            window.open(url)
         }
     </script>
 </head>
 
 <body>
-    <h1>Amazon Web scrapping</h1>
-    <label for="webapp">Search Product</label>
-    <input type="text" id="webapp" name="webapp" placeholder="search">
+    <div class="left"></div>
+    <div class="mid">
+        <div class="mid-header">
+            <h1>E-commerce Web scrapping</h1><br>
+        </div>
+        <div class="mid-body">
+            <br>
+            <label for="webapp">Search Product</label><br>
+            <input type="text" id="webapp" name="webapp" placeholder="search">
+            <br><br>
+            <!-- <button id="btn" onclick="getData()">Amazon</button> -->
+            <label for="tot-cnt">Total Count</label><br>
+            <input type="number" id="tot-cnt" name="tot-cnt" placeholder="total count">
+            <br><br>
+            <button id="btn" onclick="getFlipData()">Get Details</button>
+        </div>
+    </div>
 
-    <button id="btn" onclick="getData()">Amazon</button>
-    <!-- <br><br> -->
-    <button id="btn" onclick="getFlipData()">FlipKart</button>
+    <div class="right"></div>
 </body>
+
 </html>

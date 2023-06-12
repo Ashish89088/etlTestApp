@@ -1,0 +1,18 @@
+body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.mid-header {
+    /* background-color: rgb(124, 124, 124);
+    color: white; */
+}
+
+.mid-body {
+    /* background-color: #92DCE5;
+       color: white; */
+    height: 100vh;
+    padding-left: 25%;
+    /* align-items: center; */
+}

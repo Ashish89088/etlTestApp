@@ -8,7 +8,7 @@ from IPython.display import HTML
 
 
 amazon_scraper = AutoScraper()
-amazon_scraper.load('amazon-search')
+amazon_scraper.load('flip-search')
 app = Flask(__name__)
 
 def get_amazon_result(search_query):
@@ -32,7 +32,7 @@ def convert_to_table(final_result):
     table = pd.DataFrame(final_result)
     print(table)
     print(type(table))
-    table_html=table.to_html()
+    table_html=table.to_html().replace('border="1"','border="0"')
     print(table_html)
     return table_html
 
@@ -41,10 +41,11 @@ def search_api():
     query = request.args.get('q')
     jsondata = get_amazon_result(query)
     # jsondata = result=get_amazon_result(query)
+    website="FLIPKART"
     print(type(jsondata))
     # return dict(jsondata)
 
-    return render_template('table.html', n=jsondata)
+    return render_template('table.html', n=jsondata, website=website)
 
 if __name__ == '__main__':
     app.run(port=8082, host='0.0.0.0')

@@ -6,13 +6,170 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .table{
-            background-color: lightpink;
+        h1{
+            background-color: #2B303A;
+            text-align: center;
+            color: white;
+        }
+
+        table{
+            margin-left: auto;
+            margin-right: auto;
+            border: 0px;
+        }
+
+        thead{
+            background-color: #EEE5E9;
+        }
+        /* tbody{
+            background-color: #2B303A;
+            color: white;
+        } */
+        th {
+            /* padding-left: 20px;
+            padding-right: 20px; */
+            padding: 10px 30px 10px 30px;
         }
     </style>
 </head>
 <body>
-    <h1>TABLE</h1>
+    <!-- <h1>TABLE</h1> -->
+    <h1>{{ website }}</h1>
     <div class="table">{{ n|safe }}</div>
+<!-- 
+        <div class="table">
+            <table border="0" class="dataframe">
+                <thead>
+                  <tr style="text-align: right;">
+                    <th></th>
+                    <th>Price</th>
+                    <th>Title</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th>0</th>
+                    <td>₹58,999</td>
+                    <td>APPLE iPhone 13 (Green, 128 GB)</td>
+                  </tr>
+                  <tr>
+                    <th>1</th>
+                    <td>₹58,999</td>
+                    <td>APPLE iPhone 13 (Blue, 128 GB)</td>
+                  </tr>
+                  <tr>
+                    <th>2</th>
+                    <td>₹58,999</td>
+                    <td>APPLE iPhone 13 (Pink, 128 GB)</td>
+                  </tr>
+                  <tr>
+                    <th>3</th>
+                    <td>₹58,999</td>
+                    <td>APPLE iPhone 13 (Starlight, 128 GB)</td>
+                  </tr>
+                  <tr>
+                    <th>4</th>
+                    <td>₹58,999</td>
+                    <td>APPLE iPhone 13 (Midnight, 128 GB)</td>
+                  </tr>
+                  <tr>
+                    <th>5</th>
+                    <td>₹67,999</td>
+                    <td>APPLE iPhone 14 (Blue, 128 GB)</td>
+                  </tr>
+                  <tr>
+                    <th>6</th>
+                    <td>₹38,999</td>
+                    <td>APPLE iPhone 11 (White, 64 GB)</td>
+                  </tr>
+                  <tr>
+                    <th>7</th>
+                    <td>₹67,999</td>
+                    <td>APPLE iPhone 14 (Starlight, 128 GB)</td>
+                  </tr>
+                  <tr>
+                    <th>8</th>
+                    <td>₹67,999</td>
+                    <td>APPLE iPhone 14 (Purple, 128 GB)</td>
+                  </tr>
+                  <tr>
+                    <th>9</th>
+                    <td>₹42,999</td>
+                    <td>APPLE iPhone 11 (White, 128 GB)</td>
+                  </tr>
+                  <tr>
+                    <th>10</th>
+                    <td>₹67,999</td>
+                    <td>APPLE iPhone 14 (Midnight, 128 GB)</td>
+                  </tr>
+                  <tr>
+                    <th>11</th>
+                    <td>₹42,999</td>
+                    <td>APPLE iPhone 11 (Black, 128 GB)</td>
+                  </tr>
+                  <tr>
+                    <th>12</th>
+                    <td>₹38,999</td>
+                    <td>APPLE iPhone 11 (Black, 64 GB)</td>
+                  </tr>
+                  <tr>
+                    <th>13</th>
+                    <td>₹66,999</td>
+                    <td>APPLE iPhone 14 ((PRODUCT)RED, 128 GB)</td>
+                  </tr>
+                  <tr>
+                    <th>14</th>
+                    <td>₹67,999</td>
+                    <td>APPLE iPhone 14 (Yellow, 128 GB)</td>
+                  </tr>
+                  <tr>
+                    <th>15</th>
+                    <td>₹78,499</td>
+                    <td>APPLE iPhone 14 Plus (Starlight, 128 GB)</td>
+                  </tr>
+                  <tr>
+                    <th>16</th>
+                    <td>₹78,499</td>
+                    <td>APPLE iPhone 14 Plus (Blue, 128 GB)</td>
+                  </tr>
+                  <tr>
+                    <th>17</th>
+                    <td>₹78,499</td>
+                    <td>APPLE iPhone 14 Plus (Midnight, 128 GB)</td>
+                  </tr>
+                  <tr>
+                    <th>18</th>
+                    <td>₹78,499</td>
+                    <td>APPLE iPhone 14 Plus (Purple, 128 GB)</td>
+                  </tr>
+                  <tr>
+                    <th>19</th>
+                    <td>₹68,999</td>
+                    <td>APPLE iPhone 13 (Midnight, 256 GB)</td>
+                  </tr>
+                  <tr>
+                    <th>20</th>
+                    <td>₹77,999</td>
+                    <td>APPLE iPhone 14 (Midnight, 256 GB)</td>
+                  </tr>
+                  <tr>
+                    <th>21</th>
+                    <td>₹68,999</td>
+                    <td>APPLE iPhone 13 (Starlight, 256 GB)</td>
+                  </tr>
+                  <tr>
+                    <th>22</th>
+                    <td>₹53,999</td>
+                    <td>APPLE iPhone 12 (Blue, 64 GB)</td>
+                  </tr>
+                  <tr>
+                    <th>23</th>
+                    <td>₹77,999</td>
+                    <td>APPLE iPhone 14 Plus ((PRODUCT)RED, 128 GB)</td>
+                  </tr>
+                </tbody>
+              </table> -->
+        </div>
+
 </body>
 </html>

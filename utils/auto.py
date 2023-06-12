@@ -4,14 +4,14 @@ url = 'https://www.amazon.in/s?k=speaker'
 
 # We can add one or multiple candidates here.
 # You can also put urls here to retrieve urls.
-wanted_list = ['₹994 ','boAt Stone 180 5W Bluetooth Speaker with Upto 10 Hours Playback, 1.75" Driver, IPX7 & TWS Feature(Black)']
+wanted_list = ['₹1,299','SKYBALL Mini Sound Bar Neo 20 with True 16W Sound I Wireless Bluetooth Speaker I 2000 mAh Battrey I Upto 6 Hrs Playtime']
 
 scraper = AutoScraper()
 result = scraper.build(url, wanted_list)
 # print(result)
 
 res = scraper.get_result_similar(url,grouped=True)
-# print(res)
+print(res)
 
 web_key = list(res.keys())
 print(web_key)
